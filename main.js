@@ -134,7 +134,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 6. Theme Toggle (Dark Mode)
     const themeToggle = document.getElementById('theme-toggle');
     const themeIcon = themeToggle.querySelector('i');
-    const savedTheme = localStorage.getItem('theme');
+    const savedTheme = localStorage.getItem('theme') || 'dark';
 
     if (savedTheme === 'dark') {
         document.body.classList.add('dark-mode');
