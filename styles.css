@@ -877,6 +877,12 @@ body.dark-mode .form-group textarea::placeholder {
     color: #999;
 }
 
+body.dark-mode .stat-item h3,
+body.dark-mode .price,
+body.dark-mode .btn-outline {
+    color: var(--clr-primary-gold);
+}
+
 /* RTL Styles */
 html[dir="rtl"] body {
     font-family: 'Cairo', sans-serif;
