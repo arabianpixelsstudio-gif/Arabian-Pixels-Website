@@ -198,29 +198,38 @@ document.addEventListener('DOMContentLoaded', () => {
         setLanguage(newLang);
     });
 
-    // 8. Privacy Policy Modal
+    // 8. Modal Handling (Privacy Policy & Terms of Service)
     const privacyLink = document.getElementById('privacy-link');
     const privacyModal = document.getElementById('privacy-modal');
-    const closeModal = document.querySelector('.close-modal');
+    
+    const termsLink = document.getElementById('terms-link');
+    const termsModal = document.getElementById('terms-modal');
 
-    if (privacyLink && privacyModal && closeModal) {
-        privacyLink.addEventListener('click', (e) => {
-            e.preventDefault();
-            privacyModal.classList.add('active');
-            document.body.style.overflow = 'hidden'; // Prevent scrolling
-        });
+    const openModal = (modal) => {
+        if (!modal) return;
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    };
 
-        closeModal.addEventListener('click', () => {
-            privacyModal.classList.remove('active');
-            document.body.style.overflow = '';
-        });
+    const closeModal = (modal) => {
+        if (!modal) return;
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+    };
 
-        window.addEventListener('click', (e) => {
-            if (e.target === privacyModal) {
-                privacyModal.classList.remove('active');
-                document.body.style.overflow = '';
-            }
+    if (privacyLink) privacyLink.addEventListener('click', (e) => { e.preventDefault(); openModal(privacyModal); });
+    if (termsLink) termsLink.addEventListener('click', (e) => { e.preventDefault(); openModal(termsModal); });
+
+    document.querySelectorAll('.close-modal').forEach(btn => {
+        btn.addEventListener('click', function() {
+            closeModal(this.closest('.modal'));
         });
-    }
+    });
+
+    window.addEventListener('click', (e) => {
+        if (e.target.classList.contains('modal')) {
+            closeModal(e.target);
+        }
+    });
 
 });
