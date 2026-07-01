@@ -198,4 +198,29 @@ document.addEventListener('DOMContentLoaded', () => {
         setLanguage(newLang);
     });
 
+    // 8. Privacy Policy Modal
+    const privacyLink = document.getElementById('privacy-link');
+    const privacyModal = document.getElementById('privacy-modal');
+    const closeModal = document.querySelector('.close-modal');
+
+    if (privacyLink && privacyModal && closeModal) {
+        privacyLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            privacyModal.classList.add('active');
+            document.body.style.overflow = 'hidden'; // Prevent scrolling
+        });
+
+        closeModal.addEventListener('click', () => {
+            privacyModal.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+
+        window.addEventListener('click', (e) => {
+            if (e.target === privacyModal) {
+                privacyModal.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+    }
+
 });
