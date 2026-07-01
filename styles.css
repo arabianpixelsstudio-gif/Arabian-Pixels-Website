@@ -163,14 +163,16 @@ ul {
     z-index: 1000;
     padding: 1.5rem 0;
     transition: var(--transition);
-    background: transparent; /* starts transparent, becomes dark on scroll */
+    background: rgba(17, 17, 17, 0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .header.scrolled {
-    background: rgba(17, 17, 17, 0.95);
-    backdrop-filter: blur(10px);
+    background: rgba(17, 17, 17, 0.9);
     padding: 1rem 0;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
 }
 
 .nav-container {
