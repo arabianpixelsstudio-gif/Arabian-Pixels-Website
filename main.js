@@ -117,7 +117,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 5. FAQ Accordion
     const faqItems = document.querySelectorAll('.faq-item');
-    
     faqItems.forEach(item => {
         const question = item.querySelector('.faq-question');
         question.addEventListener('click', () => {
@@ -130,6 +129,73 @@ document.addEventListener('DOMContentLoaded', () => {
             // Toggle current item
             item.classList.toggle('active');
         });
+    });
+
+    // 6. Theme Toggle (Dark Mode)
+    const themeToggle = document.getElementById('theme-toggle');
+    const themeIcon = themeToggle.querySelector('i');
+    const savedTheme = localStorage.getItem('theme');
+
+    if (savedTheme === 'dark') {
+        document.body.classList.add('dark-mode');
+        themeIcon.classList.remove('fa-moon');
+        themeIcon.classList.add('fa-sun');
+    }
+
+    themeToggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        if (document.body.classList.contains('dark-mode')) {
+            localStorage.setItem('theme', 'dark');
+            themeIcon.classList.remove('fa-moon');
+            themeIcon.classList.add('fa-sun');
+        } else {
+            localStorage.setItem('theme', 'light');
+            themeIcon.classList.remove('fa-sun');
+            themeIcon.classList.add('fa-moon');
+        }
+    });
+
+    // 7. Language Toggle (EN / AR)
+    const langToggle = document.getElementById('lang-toggle');
+    const htmlTag = document.documentElement;
+    const translatableElements = document.querySelectorAll('.tr');
+    const translatablePlaceholders = document.querySelectorAll('.tr-placeholder');
+    const savedLang = localStorage.getItem('lang') || 'en';
+
+    const setLanguage = (lang) => {
+        if (lang === 'ar') {
+            htmlTag.setAttribute('dir', 'rtl');
+            htmlTag.setAttribute('lang', 'ar');
+            langToggle.textContent = 'EN';
+            
+            translatableElements.forEach(el => {
+                if (el.dataset.ar) el.innerHTML = el.dataset.ar;
+            });
+            translatablePlaceholders.forEach(el => {
+                if (el.dataset.ar) el.setAttribute('placeholder', el.dataset.ar);
+            });
+        } else {
+            htmlTag.setAttribute('dir', 'ltr');
+            htmlTag.setAttribute('lang', 'en');
+            langToggle.textContent = 'AR';
+            
+            translatableElements.forEach(el => {
+                if (el.dataset.en) el.innerHTML = el.dataset.en;
+            });
+            translatablePlaceholders.forEach(el => {
+                if (el.dataset.en) el.setAttribute('placeholder', el.dataset.en);
+            });
+        }
+    };
+
+    // Initialize language
+    setLanguage(savedLang);
+
+    langToggle.addEventListener('click', () => {
+        const currentLang = htmlTag.getAttribute('lang');
+        const newLang = currentLang === 'en' ? 'ar' : 'en';
+        localStorage.setItem('lang', newLang);
+        setLanguage(newLang);
     });
 
 });

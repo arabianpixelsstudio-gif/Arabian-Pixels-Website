@@ -793,3 +793,113 @@ ul {
         grid-template-columns: 1fr;
     }
 }
+
+/* Header Controls & Dark Mode */
+.nav-controls-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.icon-btn {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+}
+
+.icon-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--clr-primary-gold);
+}
+
+.lang-btn {
+    font-weight: bold;
+    font-size: 1rem;
+    font-family: var(--font-heading);
+}
+
+/* Dark Mode Overrides */
+body.dark-mode {
+    --clr-bg-white: #1a1a1a;
+    --clr-bg-light: #111111;
+    --clr-text-main: #e0e0e0;
+    --clr-text-dark: #ffffff;
+}
+
+body.dark-mode .glass-card {
+    background: rgba(26, 26, 26, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--clr-text-light);
+}
+
+body.dark-mode .stats {
+    background: var(--clr-bg-light);
+}
+
+body.dark-mode .stats-grid {
+    background: var(--clr-bg-white);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .faq-item {
+    background: var(--clr-bg-white);
+}
+
+body.dark-mode .faq-question {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .form-group input, 
+body.dark-mode .form-group select, 
+body.dark-mode .form-group textarea {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--clr-text-light);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+body.dark-mode .form-group input::placeholder, 
+body.dark-mode .form-group textarea::placeholder {
+    color: #999;
+}
+
+/* RTL Styles */
+html[dir="rtl"] body {
+    font-family: 'Cairo', sans-serif;
+}
+
+html[dir="rtl"] h1, 
+html[dir="rtl"] h2, 
+html[dir="rtl"] h3, 
+html[dir="rtl"] h4, 
+html[dir="rtl"] h5, 
+html[dir="rtl"] h6,
+html[dir="rtl"] .btn,
+html[dir="rtl"] .lang-btn {
+    font-family: 'Cairo', sans-serif;
+}
+
+html[dir="rtl"] .about-features-new p {
+    margin-left: 0;
+    margin-right: 2rem;
+}
+
+html[dir="rtl"] .footer-contact i,
+html[dir="rtl"] .contact-info i {
+    margin-right: 0;
+    margin-left: 10px;
+}

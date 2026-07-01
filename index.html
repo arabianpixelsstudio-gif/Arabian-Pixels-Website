@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -27,19 +28,27 @@
             </a>
             <nav class="nav-menu">
                 <ul class="nav-list">
-                    <li><a href="#home" class="nav-link active">Home</a></li>
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#services" class="nav-link">Services</a></li>
-                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                    <li><a href="#pricing" class="nav-link">Pricing</a></li>
-                    <li><a href="#process" class="nav-link">Process</a></li>
-                    <li><a href="#faq" class="nav-link">FAQ</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="#home" class="nav-link active tr" data-en="Home" data-ar="الرئيسية">Home</a></li>
+                    <li><a href="#about" class="nav-link tr" data-en="About" data-ar="من نحن">About</a></li>
+                    <li><a href="#services" class="nav-link tr" data-en="Services" data-ar="خدماتنا">Services</a></li>
+                    <li><a href="#portfolio" class="nav-link tr" data-en="Portfolio" data-ar="أعمالنا">Portfolio</a></li>
+                    <li><a href="#pricing" class="nav-link tr" data-en="Pricing" data-ar="الأسعار">Pricing</a></li>
+                    <li><a href="#process" class="nav-link tr" data-en="Process" data-ar="عمليتنا">Process</a></li>
+                    <li><a href="#faq" class="nav-link tr" data-en="FAQ" data-ar="الأسئلة الشائعة">FAQ</a></li>
+                    <li><a href="#contact" class="nav-link tr" data-en="Contact" data-ar="اتصل بنا">Contact</a></li>
                 </ul>
             </nav>
-            <a href="#contact" class="btn btn-primary cta-btn">Free Consultation</a>
-            <div class="mobile-toggle">
-                <i class="fas fa-bars"></i>
+            <div class="nav-controls-wrapper">
+                <a href="#contact" class="btn btn-primary cta-btn tr" data-en="Free Consultation" data-ar="استشارة مجانية">Free Consultation</a>
+                <div class="header-controls">
+                    <button id="theme-toggle" class="icon-btn" aria-label="Toggle Dark Mode">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button id="lang-toggle" class="icon-btn lang-btn">AR</button>
+                </div>
+                <div class="mobile-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
             </div>
         </div>
     </header>
@@ -48,11 +57,11 @@
         <!-- Hero Section -->
         <section id="home" class="hero">
             <div class="container hero-content reveal">
-                <h1 class="hero-title">Elevate Your Brand with <span class="highlight">Arabian Pixels</span></h1>
-                <p class="hero-subtitle">We create premium websites, AI-powered advertising, and result-driven SEO strategies that help businesses grow, attract more customers, and stand out in the digital world.</p>
+                <h1 class="hero-title tr" data-en="Elevate Your Brand with <span class='highlight'>Arabian Pixels</span>" data-ar="ارتق بعلامتك التجارية مع <span class='highlight'>أريبيان بيكسلز</span>">Elevate Your Brand with <span class="highlight">Arabian Pixels</span></h1>
+                <p class="hero-subtitle tr" data-en="We create premium websites, AI-powered advertising, and result-driven SEO strategies that help businesses grow, attract more customers, and stand out in the digital world." data-ar="نقوم بإنشاء مواقع إلكترونية مميزة وإعلانات مدعومة بالذكاء الاصطناعي واستراتيجيات تحسين محركات البحث التي تساعد الشركات على النمو وجذب المزيد من العملاء والتميز في العالم الرقمي.">We create premium websites, AI-powered advertising, and result-driven SEO strategies that help businesses grow, attract more customers, and stand out in the digital world.</p>
                 <div class="hero-actions">
-                    <a href="#services" class="btn btn-primary">Our Services</a>
-                    <a href="#portfolio" class="btn btn-secondary">View Work</a>
+                    <a href="#services" class="btn btn-primary tr" data-en="Our Services" data-ar="خدماتنا">Our Services</a>
+                    <a href="#portfolio" class="btn btn-secondary tr" data-en="View Work" data-ar="عرض الأعمال">View Work</a>
                 </div>
             </div>
             <div class="hero-bg-glow"></div>
@@ -63,19 +72,19 @@
             <div class="container stats-grid">
                 <div class="stat-item reveal">
                     <h3 class="stat-number" data-target="250">0</h3>
-                    <p>Projects Completed</p>
+                    <p class="tr" data-en="Projects Completed" data-ar="مشاريع منجزة">Projects Completed</p>
                 </div>
                 <div class="stat-item reveal">
                     <h3 class="stat-number" data-target="98">0</h3><span>%</span>
-                    <p>Client Satisfaction</p>
+                    <p class="tr" data-en="Client Satisfaction" data-ar="رضا العملاء">Client Satisfaction</p>
                 </div>
                 <div class="stat-item reveal">
                     <h3 class="stat-number" data-target="15">0</h3><span>+</span>
-                    <p>Awards Won</p>
+                    <p class="tr" data-en="Awards Won" data-ar="جوائز مكتسبة">Awards Won</p>
                 </div>
                 <div class="stat-item reveal">
                     <h3 class="stat-number" data-target="10">0</h3>
-                    <p>Years Experience</p>
+                    <p class="tr" data-en="Years Experience" data-ar="سنوات خبرة">Years Experience</p>
                 </div>
             </div>
         </section>
@@ -84,23 +93,23 @@
         <section id="about" class="about section">
             <div class="container about-container">
                 <div class="about-text reveal">
-                    <h2 class="section-title">Digital Experiences That <span class="highlight">Grow Brands</span></h2>
-                    <p>At Arabian Pixels, we combine creativity, technology, and strategy to build websites, Shopify stores, and AI-powered campaigns that deliver real results.</p>
+                    <h2 class="section-title tr" data-en="Digital Experiences That <span class='highlight'>Grow Brands</span>" data-ar="تجارب رقمية <span class='highlight'>تنمي العلامات التجارية</span>">Digital Experiences That <span class="highlight">Grow Brands</span></h2>
+                    <p class="tr" data-en="At Arabian Pixels, we combine creativity, technology, and strategy to build websites, Shopify stores, and AI-powered campaigns that deliver real results." data-ar="في أريبيان بيكسلز، نجمع بين الإبداع والتكنولوجيا والاستراتيجية لبناء مواقع الويب ومتاجر Shopify والحملات المدعومة بالذكاء الاصطناعي التي تحقق نتائج حقيقية.">At Arabian Pixels, we combine creativity, technology, and strategy to build websites, Shopify stores, and AI-powered campaigns that deliver real results.</p>
                     <div class="about-features-new">
                         <div class="feature-item">
-                            <h4><i class="fas fa-paint-brush"></i> Innovative Design</h4>
-                            <p>Beautiful, user-focused experiences that stand out.</p>
+                            <h4 class="tr" data-en="<i class='fas fa-paint-brush'></i> Innovative Design" data-ar="<i class='fas fa-paint-brush'></i> تصميم مبتكر"><i class="fas fa-paint-brush"></i> Innovative Design</h4>
+                            <p class="tr" data-en="Beautiful, user-focused experiences that stand out." data-ar="تجارب جميلة تركز على المستخدم وتبرز بين المنافسين.">Beautiful, user-focused experiences that stand out.</p>
                         </div>
                         <div class="feature-item">
-                            <h4><i class="fas fa-chart-line"></i> Data-Driven Strategy</h4>
-                            <p>Smart marketing decisions backed by insights and analytics.</p>
+                            <h4 class="tr" data-en="<i class='fas fa-chart-line'></i> Data-Driven Strategy" data-ar="<i class='fas fa-chart-line'></i> استراتيجية مبنية على البيانات"><i class="fas fa-chart-line"></i> Data-Driven Strategy</h4>
+                            <p class="tr" data-en="Smart marketing decisions backed by insights and analytics." data-ar="قرارات تسويقية ذكية مدعومة بالرؤى والتحليلات.">Smart marketing decisions backed by insights and analytics.</p>
                         </div>
                         <div class="feature-item">
-                            <h4><i class="fas fa-headset"></i> Dedicated Support</h4>
-                            <p>A reliable team committed to your growth, every step of the way.</p>
+                            <h4 class="tr" data-en="<i class='fas fa-headset'></i> Dedicated Support" data-ar="<i class='fas fa-headset'></i> دعم متخصص"><i class="fas fa-headset"></i> Dedicated Support</h4>
+                            <p class="tr" data-en="A reliable team committed to your growth, every step of the way." data-ar="فريق موثوق ملتزم بنموك، في كل خطوة على الطريق.">A reliable team committed to your growth, every step of the way.</p>
                         </div>
                     </div>
-                    <a href="#contact" class="btn btn-outline">Discover More</a>
+                    <a href="#contact" class="btn btn-outline tr" data-en="Discover More" data-ar="اكتشف المزيد">Discover More</a>
                 </div>
                 <div class="about-image reveal">
                     <img src="assets/images/AboutImage.webp" alt="Arabian Pixels About Image" class="about-img-actual">
@@ -112,45 +121,45 @@
         <section id="services" class="services section bg-darker">
             <div class="container">
                 <div class="section-header reveal">
-                    <h2 class="section-title">Our <span class="highlight">Expertise</span></h2>
-                    <p>Comprehensive digital solutions tailored for your success.</p>
+                    <h2 class="section-title tr" data-en="Our <span class='highlight'>Expertise</span>" data-ar="خبراتنا <span class='highlight'>وخدماتنا</span>">Our <span class="highlight">Expertise</span></h2>
+                    <p class="tr" data-en="Comprehensive digital solutions tailored for your success." data-ar="حلول رقمية شاملة مصممة لنجاحك.">Comprehensive digital solutions tailored for your success.</p>
                 </div>
                 <div class="services-grid">
                     <!-- Service 1 -->
                     <div class="service-card glass-card reveal">
                         <i class="fas fa-laptop-code service-icon"></i>
-                        <h3>Web Design</h3>
-                        <p>Bespoke, fully responsive websites that captivate and convert.</p>
+                        <h3 class="tr" data-en="Web Design" data-ar="تصميم الويب">Web Design</h3>
+                        <p class="tr" data-en="Bespoke, fully responsive websites that captivate and convert." data-ar="مواقع إلكترونية مخصصة وسريعة الاستجابة تأسر القلوب وتحقق المبيعات.">Bespoke, fully responsive websites that captivate and convert.</p>
                     </div>
                     <!-- Service 2 -->
                     <div class="service-card glass-card reveal">
                         <i class="fab fa-shopify service-icon"></i>
-                        <h3>Shopify Development</h3>
-                        <p>High-performance e-commerce stores optimized for sales.</p>
+                        <h3 class="tr" data-en="Shopify Development" data-ar="تطوير شوبيفاي">Shopify Development</h3>
+                        <p class="tr" data-en="High-performance e-commerce stores optimized for sales." data-ar="متاجر إلكترونية عالية الأداء ومحسّنة للمبيعات.">High-performance e-commerce stores optimized for sales.</p>
                     </div>
                     <!-- Service 3 -->
                     <div class="service-card glass-card reveal">
                         <i class="fas fa-robot service-icon"></i>
-                        <h3>AI Ads Creation</h3>
-                        <p>Cutting-edge AI generated advertisements that stand out.</p>
+                        <h3 class="tr" data-en="AI Ads Creation" data-ar="إنشاء إعلانات بالذكاء الاصطناعي">AI Ads Creation</h3>
+                        <p class="tr" data-en="Cutting-edge AI generated advertisements that stand out." data-ar="إعلانات مبتكرة تم إنشاؤها بواسطة الذكاء الاصطناعي وتتميز عن غيرها.">Cutting-edge AI generated advertisements that stand out.</p>
                     </div>
                     <!-- Service 4 -->
                     <div class="service-card glass-card reveal">
                         <i class="fas fa-bullhorn service-icon"></i>
-                        <h3>Digital Marketing</h3>
-                        <p>Strategic Google & Meta Ads to drive targeted traffic.</p>
+                        <h3 class="tr" data-en="Digital Marketing" data-ar="التسويق الرقمي">Digital Marketing</h3>
+                        <p class="tr" data-en="Strategic Google & Meta Ads to drive targeted traffic." data-ar="إعلانات جوجل وميتا الاستراتيجية لجذب زيارات مستهدفة.">Strategic Google & Meta Ads to drive targeted traffic.</p>
                     </div>
                     <!-- Service 5 -->
                     <div class="service-card glass-card reveal">
                         <i class="fas fa-search service-icon"></i>
-                        <h3>SEO Mastery</h3>
-                        <p>Rank higher on search engines and dominate your niche.</p>
+                        <h3 class="tr" data-en="SEO Mastery" data-ar="إتقان السيو">SEO Mastery</h3>
+                        <p class="tr" data-en="Rank higher on search engines and dominate your niche." data-ar="تصدر نتائج محركات البحث وهيمن على مجالك.">Rank higher on search engines and dominate your niche.</p>
                     </div>
                     <!-- Service 6 -->
                     <div class="service-card glass-card reveal">
                         <i class="fas fa-paint-brush service-icon"></i>
-                        <h3>Branding & Design</h3>
-                        <p>Logos, posters, and brand identities that leave a mark.</p>
+                        <h3 class="tr" data-en="Branding & Design" data-ar="العلامات التجارية والتصميم">Branding & Design</h3>
+                        <p class="tr" data-en="Logos, posters, and brand identities that leave a mark." data-ar="شعارات وملصقات وهويات تجارية تترك بصمة.">Logos, posters, and brand identities that leave a mark.</p>
                     </div>
                 </div>
             </div>
@@ -160,29 +169,29 @@
         <section id="portfolio" class="portfolio section">
             <div class="container">
                 <div class="section-header reveal">
-                    <h2 class="section-title">Featured <span class="highlight">Works</span></h2>
-                    <p>A glimpse into our award-winning digital creations.</p>
+                    <h2 class="section-title tr" data-en="Featured <span class='highlight'>Works</span>" data-ar="أعمالنا <span class='highlight'>المميزة</span>">Featured <span class="highlight">Works</span></h2>
+                    <p class="tr" data-en="A glimpse into our award-winning digital creations." data-ar="لمحة عن إبداعاتنا الرقمية الحائزة على جوائز.">A glimpse into our award-winning digital creations.</p>
                 </div>
                 <div class="portfolio-grid">
                     <div class="portfolio-item glass-card reveal">
                         <img src="assets/images/work1.webp" alt="Project 1" class="portfolio-img">
                         <div class="portfolio-info">
-                            <h4>Luxury Real Estate</h4>
-                            <p>Web Design & SEO</p>
+                            <h4 class="tr" data-en="Luxury Real Estate" data-ar="عقارات فاخرة">Luxury Real Estate</h4>
+                            <p class="tr" data-en="Web Design & SEO" data-ar="تصميم الويب والسيو">Web Design & SEO</p>
                         </div>
                     </div>
                     <div class="portfolio-item glass-card reveal">
                         <img src="assets/images/work2.webp" alt="Project 2" class="portfolio-img">
                         <div class="portfolio-info">
-                            <h4>Urban Fashion</h4>
-                            <p>Shopify Store</p>
+                            <h4 class="tr" data-en="Urban Fashion" data-ar="أزياء حضرية">Urban Fashion</h4>
+                            <p class="tr" data-en="Shopify Store" data-ar="متجر شوبيفاي">Shopify Store</p>
                         </div>
                     </div>
                     <div class="portfolio-item glass-card reveal">
                         <img src="assets/images/work3.webp" alt="Project 3" class="portfolio-img">
                         <div class="portfolio-info">
-                            <h4>Tech Startup</h4>
-                            <p>Branding & AI Ads</p>
+                            <h4 class="tr" data-en="Tech Startup" data-ar="شركة تقنية ناشئة">Tech Startup</h4>
+                            <p class="tr" data-en="Branding & AI Ads" data-ar="العلامة التجارية وإعلانات الذكاء الاصطناعي">Branding & AI Ads</p>
                         </div>
                     </div>
                 </div>
@@ -193,29 +202,29 @@
         <section id="process" class="process section bg-darker">
             <div class="container">
                 <div class="section-header reveal">
-                    <h2 class="section-title">Our <span class="highlight">Process</span></h2>
-                    <p>How we turn your vision into reality.</p>
+                    <h2 class="section-title tr" data-en="Our <span class='highlight'>Process</span>" data-ar="كيفية <span class='highlight'>عملنا</span>">Our <span class="highlight">Process</span></h2>
+                    <p class="tr" data-en="How we turn your vision into reality." data-ar="كيف نحوّل رؤيتك إلى واقع.">How we turn your vision into reality.</p>
                 </div>
                 <div class="process-timeline">
                     <div class="process-step reveal">
                         <div class="step-number">01</div>
-                        <h3>Discovery</h3>
-                        <p>Understanding your goals, audience, and market.</p>
+                        <h3 class="tr" data-en="Discovery" data-ar="الاكتشاف">Discovery</h3>
+                        <p class="tr" data-en="Understanding your goals, audience, and market." data-ar="فهم أهدافك وجمهورك والسوق.">Understanding your goals, audience, and market.</p>
                     </div>
                     <div class="process-step reveal">
                         <div class="step-number">02</div>
-                        <h3>Strategy</h3>
-                        <p>Crafting a tailored plan for design and marketing.</p>
+                        <h3 class="tr" data-en="Strategy" data-ar="الاستراتيجية">Strategy</h3>
+                        <p class="tr" data-en="Crafting a tailored plan for design and marketing." data-ar="صياغة خطة مخصصة للتصميم والتسويق.">Crafting a tailored plan for design and marketing.</p>
                     </div>
                     <div class="process-step reveal">
                         <div class="step-number">03</div>
-                        <h3>Execution</h3>
-                        <p>Building, designing, and launching your digital assets.</p>
+                        <h3 class="tr" data-en="Execution" data-ar="التنفيذ">Execution</h3>
+                        <p class="tr" data-en="Building, designing, and launching your digital assets." data-ar="بناء وتصميم وإطلاق أصولك الرقمية.">Building, designing, and launching your digital assets.</p>
                     </div>
                     <div class="process-step reveal">
                         <div class="step-number">04</div>
-                        <h3>Optimization</h3>
-                        <p>Analyzing data to scale and improve performance.</p>
+                        <h3 class="tr" data-en="Optimization" data-ar="التحسين">Optimization</h3>
+                        <p class="tr" data-en="Analyzing data to scale and improve performance." data-ar="تحليل البيانات لتوسيع نطاق الأداء وتحسينه.">Analyzing data to scale and improve performance.</p>
                     </div>
                 </div>
             </div>
@@ -225,18 +234,18 @@
         <section class="testimonials section">
             <div class="container">
                 <div class="section-header reveal">
-                    <h2 class="section-title">Client <span class="highlight">Reviews</span></h2>
+                    <h2 class="section-title tr" data-en="Client <span class='highlight'>Reviews</span>" data-ar="آراء <span class='highlight'>العملاء</span>">Client <span class="highlight">Reviews</span></h2>
                 </div>
                 <div class="testimonials-grid">
                     <div class="testimonial-card glass-card reveal">
                         <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        <p>"Arabian Pixels completely transformed our online presence. The new Shopify store doubled our sales in a month!"</p>
-                        <h4>- Sarah Jenkins</h4>
+                        <p class="tr" data-en='"Arabian Pixels completely transformed our online presence. The new Shopify store doubled our sales in a month!"' data-ar='"لقد غيرت أريبيان بيكسلز تواجدنا على الإنترنت بالكامل. ضاعف متجر شوبيفاي الجديد مبيعاتنا في شهر واحد!"'>"Arabian Pixels completely transformed our online presence. The new Shopify store doubled our sales in a month!"</p>
+                        <h4 class="tr" data-en="- Sarah Jenkins" data-ar="- سارة جينكينز">- Sarah Jenkins</h4>
                     </div>
                     <div class="testimonial-card glass-card reveal">
                         <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        <p>"Their AI ads are incredibly engaging. We've seen a massive drop in CPA and a huge increase in ROAS."</p>
-                        <h4>- Ahmed Al-Fayed</h4>
+                        <p class="tr" data-en='"Their AI ads are incredibly engaging. We&apos;ve seen a massive drop in CPA and a huge increase in ROAS."' data-ar='"إعلاناتهم بالذكاء الاصطناعي جذابة بشكل لا يصدق. لقد رأينا انخفاضًا هائلاً في تكلفة الاكتساب وزيادة ضخمة في العائد على الإنفاق الإعلاني."'>"Their AI ads are incredibly engaging. We've seen a massive drop in CPA and a huge increase in ROAS."</p>
+                        <h4 class="tr" data-en="- Ahmed Al-Fayed" data-ar="- أحمد الفايد">- Ahmed Al-Fayed</h4>
                     </div>
                 </div>
             </div>
@@ -246,62 +255,62 @@
         <section id="pricing" class="pricing section bg-darker">
             <div class="container">
                 <div class="section-header reveal">
-                    <h2 class="section-title">Transparent <span class="highlight">Pricing</span></h2>
-                    <p>Packages designed for businesses of all sizes.</p>
+                    <h2 class="section-title tr" data-en="Transparent <span class='highlight'>Pricing</span>" data-ar="أسعار <span class='highlight'>شفافة</span>">Transparent <span class="highlight">Pricing</span></h2>
+                    <p class="tr" data-en="Packages designed for businesses of all sizes." data-ar="باقات مصممة للشركات من جميع الأحجام.">Packages designed for businesses of all sizes.</p>
                 </div>
                 <div class="pricing-grid">
                     <div class="pricing-card glass-card reveal">
-                        <h3>Starter</h3>
+                        <h3 class="tr" data-en="Starter" data-ar="البداية">Starter</h3>
                         <div class="price"><span>$</span>999</div>
                         <ul>
-                            <li>5-Page Professional Website Design</li>
-                            <li>Mobile Responsive Design</li>
-                            <li>Basic SEO Setup</li>
-                            <li>Contact Form Integration</li>
-                            <li>Social Media Integration</li>
-                            <li>Basic Branding Kit (Logo & Color Palette)</li>
-                            <li>7 Promotional AI Ad Video (20 Seconds)</li>
-                            <li>2 Month Support After Delivery</li>
+                            <li class="tr" data-en="5-Page Professional Website Design" data-ar="تصميم موقع احترافي من 5 صفحات">5-Page Professional Website Design</li>
+                            <li class="tr" data-en="Mobile Responsive Design" data-ar="تصميم متجاوب مع الجوال">Mobile Responsive Design</li>
+                            <li class="tr" data-en="Basic SEO Setup" data-ar="إعداد السيو الأساسي">Basic SEO Setup</li>
+                            <li class="tr" data-en="Contact Form Integration" data-ar="دمج نموذج الاتصال">Contact Form Integration</li>
+                            <li class="tr" data-en="Social Media Integration" data-ar="دمج وسائل التواصل الاجتماعي">Social Media Integration</li>
+                            <li class="tr" data-en="Basic Branding Kit (Logo & Color Palette)" data-ar="باقة العلامة التجارية الأساسية (الشعار ولوحة الألوان)">Basic Branding Kit (Logo & Color Palette)</li>
+                            <li class="tr" data-en="7 Promotional AI Ad Video (20 Seconds)" data-ar="7 فيديوهات إعلانية بالذكاء الاصطناعي (20 ثانية)">7 Promotional AI Ad Video (20 Seconds)</li>
+                            <li class="tr" data-en="2 Month Support After Delivery" data-ar="دعم لمدة شهرين بعد التسليم">2 Month Support After Delivery</li>
                         </ul>
-                        <a href="#contact" class="btn btn-outline">Get Started</a>
+                        <a href="#contact" class="btn btn-outline tr" data-en="Get Started" data-ar="ابدأ الآن">Get Started</a>
                     </div>
                     <div class="pricing-card glass-card featured reveal">
-                        <div class="badge">Most Popular</div>
-                        <h3>Pro Business</h3>
+                        <div class="badge tr" data-en="Most Popular" data-ar="الأكثر شيوعًا">Most Popular</div>
+                        <h3 class="tr" data-en="Pro Business" data-ar="الأعمال الاحترافية">Pro Business</h3>
                         <div class="price"><span>$</span>2,499</div>
                         <ul>
-                            <li>Premium Website</li>
-                            <li>Shopify Store Development</li>
-                            <li>Full E-commerce Setup</li>
-                            <li>Payment Gateway Integration</li>
-                            <li>Advanced SEO Optimization</li>
-                            <li>Professional Branding Package</li>
-                            <li>Social Media Management (2 Month)</li>
-                            <li>Ads Management (Meta & Google)</li>
-                            <li>Digital Marketing Strategy</li>
-                            <li>8 AI Advertisement Videos</li>
-                            <li>Analytics & Performance Reports</li>
-                            <li>Priority Support</li>
+                            <li class="tr" data-en="Premium Website" data-ar="موقع إلكتروني متميز">Premium Website</li>
+                            <li class="tr" data-en="Shopify Store Development" data-ar="تطوير متجر شوبيفاي">Shopify Store Development</li>
+                            <li class="tr" data-en="Full E-commerce Setup" data-ar="إعداد كامل للتجارة الإلكترونية">Full E-commerce Setup</li>
+                            <li class="tr" data-en="Payment Gateway Integration" data-ar="دمج بوابات الدفع">Payment Gateway Integration</li>
+                            <li class="tr" data-en="Advanced SEO Optimization" data-ar="تحسين السيو المتقدم">Advanced SEO Optimization</li>
+                            <li class="tr" data-en="Professional Branding Package" data-ar="باقة العلامة التجارية الاحترافية">Professional Branding Package</li>
+                            <li class="tr" data-en="Social Media Management (2 Month)" data-ar="إدارة وسائل التواصل الاجتماعي (شهرين)">Social Media Management (2 Month)</li>
+                            <li class="tr" data-en="Ads Management (Meta & Google)" data-ar="إدارة الإعلانات (ميتا وجوجل)">Ads Management (Meta & Google)</li>
+                            <li class="tr" data-en="Digital Marketing Strategy" data-ar="استراتيجية التسويق الرقمي">Digital Marketing Strategy</li>
+                            <li class="tr" data-en="8 AI Advertisement Videos" data-ar="8 فيديوهات إعلانية بالذكاء الاصطناعي">8 AI Advertisement Videos</li>
+                            <li class="tr" data-en="Analytics & Performance Reports" data-ar="تقارير التحليلات والأداء">Analytics & Performance Reports</li>
+                            <li class="tr" data-en="Priority Support" data-ar="دعم ذو أولوية">Priority Support</li>
                         </ul>
-                        <a href="#contact" class="btn btn-primary">Get Started</a>
+                        <a href="#contact" class="btn btn-primary tr" data-en="Get Started" data-ar="ابدأ الآن">Get Started</a>
                     </div>
                     <div class="pricing-card glass-card reveal">
-                        <h3>Enterprise</h3>
-                        <div class="price">Custom</div>
+                        <h3 class="tr" data-en="Enterprise" data-ar="المؤسسات">Enterprise</h3>
+                        <div class="price tr" data-en="Custom" data-ar="مخصص">Custom</div>
                         <ul>
-                            <li>Custom Website or Advanced Shopify Development</li>
-                            <li>Complete Branding & Rebranding</li>
-                            <li>Full Social Media Management</li>
-                            <li>Dedicated Digital Marketing Team</li>
-                            <li>Advanced Ads Management & Optimization</li>
-                            <li>Unlimited AI Ad Creatives</li>
-                            <li>Landing Pages & Funnel Development</li>
-                            <li>SEO & Content Strategy</li>
-                            <li>Monthly Performance Reports</li>
-                            <li>Dedicated Account Manager</li>
-                            <li>Ongoing Support & Maintenance</li>
+                            <li class="tr" data-en="Custom Website or Advanced Shopify Development" data-ar="موقع مخصص أو تطوير متقدم لشوبيفاي">Custom Website or Advanced Shopify Development</li>
+                            <li class="tr" data-en="Complete Branding & Rebranding" data-ar="بناء العلامة التجارية وإعادة صياغتها بالكامل">Complete Branding & Rebranding</li>
+                            <li class="tr" data-en="Full Social Media Management" data-ar="إدارة كاملة لوسائل التواصل الاجتماعي">Full Social Media Management</li>
+                            <li class="tr" data-en="Dedicated Digital Marketing Team" data-ar="فريق تسويق رقمي متخصص">Dedicated Digital Marketing Team</li>
+                            <li class="tr" data-en="Advanced Ads Management & Optimization" data-ar="إدارة الإعلانات وتحسينها بشكل متقدم">Advanced Ads Management & Optimization</li>
+                            <li class="tr" data-en="Unlimited AI Ad Creatives" data-ar="إبداعات إعلانية غير محدودة بالذكاء الاصطناعي">Unlimited AI Ad Creatives</li>
+                            <li class="tr" data-en="Landing Pages & Funnel Development" data-ar="صفحات الهبوط وتطوير مسارات المبيعات">Landing Pages & Funnel Development</li>
+                            <li class="tr" data-en="SEO & Content Strategy" data-ar="السيو واستراتيجية المحتوى">SEO & Content Strategy</li>
+                            <li class="tr" data-en="Monthly Performance Reports" data-ar="تقارير الأداء الشهرية">Monthly Performance Reports</li>
+                            <li class="tr" data-en="Dedicated Account Manager" data-ar="مدير حساب مخصص">Dedicated Account Manager</li>
+                            <li class="tr" data-en="Ongoing Support & Maintenance" data-ar="دعم وصيانة مستمرة">Ongoing Support & Maintenance</li>
                         </ul>
-                        <a href="#contact" class="btn btn-outline">Contact Us</a>
+                        <a href="#contact" class="btn btn-outline tr" data-en="Contact Us" data-ar="اتصل بنا">Contact Us</a>
                     </div>
                 </div>
             </div>
@@ -311,52 +320,52 @@
         <section id="faq" class="faq section">
             <div class="container">
                 <div class="section-header reveal">
-                    <h2 class="section-title">Got <span class="highlight">Questions?</span></h2>
+                    <h2 class="section-title tr" data-en="Got <span class='highlight'>Questions?</span>" data-ar="لديك <span class='highlight'>أسئلة؟</span>">Got <span class="highlight">Questions?</span></h2>
                 </div>
                 <div class="faq-accordion reveal">
                     <div class="faq-item">
                         <div class="faq-question">
-                            <h3>What services does Arabian Pixels offer?</h3>
+                            <h3 class="tr" data-en="What services does Arabian Pixels offer?" data-ar="ما هي الخدمات التي تقدمها أريبيان بيكسلز؟">What services does Arabian Pixels offer?</h3>
                             <i class="fas fa-chevron-down"></i>
                         </div>
                         <div class="faq-answer">
-                            <p>Arabian Pixels provides a complete range of digital services, including website design and development, Shopify store development, AI-powered ad creatives, social media management, digital marketing, branding, graphic design, and ads management.</p>
+                            <p class="tr" data-en="Arabian Pixels provides a complete range of digital services, including website design and development, Shopify store development, AI-powered ad creatives, social media management, digital marketing, branding, graphic design, and ads management." data-ar="توفر أريبيان بيكسلز مجموعة كاملة من الخدمات الرقمية، بما في ذلك تصميم وتطوير مواقع الويب، وتطوير متاجر شوبيفاي، والإبداعات الإعلانية المدعومة بالذكاء الاصطناعي، وإدارة وسائل التواصل الاجتماعي، والتسويق الرقمي، والعلامات التجارية، وتصميم الجرافيك، وإدارة الإعلانات.">Arabian Pixels provides a complete range of digital services, including website design and development, Shopify store development, AI-powered ad creatives, social media management, digital marketing, branding, graphic design, and ads management.</p>
                         </div>
                     </div>
                     <div class="faq-item">
                         <div class="faq-question">
-                            <h3>How long does it take to build a website?</h3>
+                            <h3 class="tr" data-en="How long does it take to build a website?" data-ar="كم من الوقت يستغرق بناء موقع إلكتروني؟">How long does it take to build a website?</h3>
                             <i class="fas fa-chevron-down"></i>
                         </div>
                         <div class="faq-answer">
-                            <p>The timeline depends on the project's complexity. A standard business website typically takes 1–7 Days, while custom websites and Shopify stores may take 2–4 weeks.</p>
+                            <p class="tr" data-en="The timeline depends on the project's complexity. A standard business website typically takes 1–7 Days, while custom websites and Shopify stores may take 2–4 weeks." data-ar="الجدول الزمني يعتمد على تعقيد المشروع. عادة ما يستغرق موقع العمل القياسي من 1 إلى 7 أيام، في حين قد تستغرق مواقع الويب المخصصة ومتاجر شوبيفاي من أسبوعين إلى 4 أسابيع.">The timeline depends on the project's complexity. A standard business website typically takes 1–7 Days, while custom websites and Shopify stores may take 2–4 weeks.</p>
                         </div>
                     </div>
                     <div class="faq-item">
                         <div class="faq-question">
-                            <h3>Do you offer social media management and advertising services?</h3>
+                            <h3 class="tr" data-en="Do you offer social media management and advertising services?" data-ar="هل تقدمون خدمات إدارة وسائل التواصل الاجتماعي والإعلان؟">Do you offer social media management and advertising services?</h3>
                             <i class="fas fa-chevron-down"></i>
                         </div>
                         <div class="faq-answer">
-                            <p>Yes. We manage your social media accounts, create engaging content, design AI-powered advertisements, and run optimized ad campaigns on platforms like Facebook, Instagram, and Google.</p>
+                            <p class="tr" data-en="Yes. We manage your social media accounts, create engaging content, design AI-powered advertisements, and run optimized ad campaigns on platforms like Facebook, Instagram, and Google." data-ar="نعم. ندير حساباتك على وسائل التواصل الاجتماعي، وننشئ محتوى جذابًا، ونصمم إعلانات مدعومة بالذكاء الاصطناعي، وندير حملات إعلانية مُحسّنة على منصات مثل فيسبوك وانستغرام وجوجل.">Yes. We manage your social media accounts, create engaging content, design AI-powered advertisements, and run optimized ad campaigns on platforms like Facebook, Instagram, and Google.</p>
                         </div>
                     </div>
                     <div class="faq-item">
                         <div class="faq-question">
-                            <h3>Can Arabian Pixels help with branding for a new business?</h3>
+                            <h3 class="tr" data-en="Can Arabian Pixels help with branding for a new business?" data-ar="هل يمكن أن تساعد أريبيان بيكسلز في العلامات التجارية لشركة جديدة؟">Can Arabian Pixels help with branding for a new business?</h3>
                             <i class="fas fa-chevron-down"></i>
                         </div>
                         <div class="faq-answer">
-                            <p>Absolutely. We offer complete branding solutions, including logo design, brand identity creation, marketing materials, and brand strategy to help your business stand out.</p>
+                            <p class="tr" data-en="Absolutely. We offer complete branding solutions, including logo design, brand identity creation, marketing materials, and brand strategy to help your business stand out." data-ar="بالتأكيد. نقدم حلولاً متكاملة للعلامات التجارية، بما في ذلك تصميم الشعار، وإنشاء هوية العلامة التجارية، والمواد التسويقية، واستراتيجية العلامة التجارية لمساعدة عملك على التميز.">Absolutely. We offer complete branding solutions, including logo design, brand identity creation, marketing materials, and brand strategy to help your business stand out.</p>
                         </div>
                     </div>
                     <div class="faq-item">
                         <div class="faq-question">
-                            <h3>Do you provide ongoing support after project completion?</h3>
+                            <h3 class="tr" data-en="Do you provide ongoing support after project completion?" data-ar="هل تقدمون دعمًا مستمرًا بعد اكتمال المشروع؟">Do you provide ongoing support after project completion?</h3>
                             <i class="fas fa-chevron-down"></i>
                         </div>
                         <div class="faq-answer">
-                            <p>Yes. We offer ongoing maintenance, updates, technical support, and digital marketing assistance to ensure your business continues to grow after launch.</p>
+                            <p class="tr" data-en="Yes. We offer ongoing maintenance, updates, technical support, and digital marketing assistance to ensure your business continues to grow after launch." data-ar="نعم. نقدم صيانة مستمرة وتحديثات ودعمًا فنيًا ومساعدة في التسويق الرقمي لضمان استمرار نمو عملك بعد الإطلاق.">Yes. We offer ongoing maintenance, updates, technical support, and digital marketing assistance to ensure your business continues to grow after launch.</p>
                         </div>
                     </div>
                 </div>
@@ -367,36 +376,34 @@
         <section id="contact" class="contact section bg-darker">
             <div class="container">
                 <div class="section-header reveal">
-                    <h2 class="section-title">Book a <span class="highlight">Consultation</span></h2>
-                    <p>Let's discuss how we can elevate your brand.</p>
+                    <h2 class="section-title tr" data-en="Book a <span class='highlight'>Consultation</span>" data-ar="احجز <span class='highlight'>استشارة</span>">Book a <span class="highlight">Consultation</span></h2>
+                    <p class="tr" data-en="Let's discuss how we can elevate your brand." data-ar="دعنا نناقش كيف يمكننا الارتقاء بعلامتك التجارية.">Let's discuss how we can elevate your brand.</p>
                 </div>
                 <div class="contact-content">
-
                     <form action="mailto:arabianpixels.studio@gmail.com" method="POST" enctype="text/plain" class="contact-form glass-card reveal">
                         <div class="form-group">
-                            <input type="text" name="name" placeholder="Your Name" required>
+                            <input type="text" name="name" class="tr-placeholder" data-en="Your Name" data-ar="اسمك" placeholder="Your Name" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" name="email" placeholder="Your Email" required>
+                            <input type="email" name="email" class="tr-placeholder" data-en="Your Email" data-ar="بريدك الإلكتروني" placeholder="Your Email" required>
                         </div>
                         <div class="form-group">
-                            <input type="tel" name="phone" placeholder="Your Phone Number">
+                            <input type="tel" name="phone" class="tr-placeholder" data-en="Your Phone Number" data-ar="رقم هاتفك" placeholder="Your Phone Number">
                         </div>
                         <div class="form-group">
                             <select name="service" required>
-                                <option value="" disabled selected>Select a Service</option>
-                                <option value="Starter Plan">Starter Plan</option>
-                                <option value="Pro Business Plan">Pro Business Plan</option>
-                                <option value="Custom Plan">Custom Plan</option>
+                                <option value="" disabled selected class="tr" data-en="Select a Service" data-ar="اختر خدمة">Select a Service</option>
+                                <option value="Starter Plan" class="tr" data-en="Starter Plan" data-ar="باقة البداية">Starter Plan</option>
+                                <option value="Pro Business Plan" class="tr" data-en="Pro Business Plan" data-ar="باقة الأعمال الاحترافية">Pro Business Plan</option>
+                                <option value="Custom Plan" class="tr" data-en="Custom Plan" data-ar="باقة مخصصة">Custom Plan</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <textarea name="message" placeholder="Tell us about your project" rows="5" required></textarea>
+                            <textarea name="message" class="tr-placeholder" data-en="Tell us about your project" data-ar="أخبرنا عن مشروعك" placeholder="Tell us about your project" rows="5" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                        <button type="submit" class="btn btn-primary w-100 tr" data-en="Send Message" data-ar="إرسال رسالة">Send Message</button>
                     </form>
                 </div>
-
             </div>
         </section>
 
@@ -405,38 +412,38 @@
     <footer class="footer">
         <div class="container footer-grid">
             <div class="footer-brand">
-                <h2 class="footer-logo">Arabian <span class="highlight">Pixels</span></h2>
-                <p>Elevating Businesses Through Creativity.</p>
+                <h2 class="footer-logo tr" data-en="Arabian <span class='highlight'>Pixels</span>" data-ar="أريبيان <span class='highlight'>بيكسلز</span>">Arabian <span class="highlight">Pixels</span></h2>
+                <p class="tr" data-en="Elevating Businesses Through Creativity." data-ar="نرتقي بالأعمال من خلال الإبداع.">Elevating Businesses Through Creativity.</p>
             </div>
             <div class="footer-links">
-                <h3>Quick Links</h3>
+                <h3 class="tr" data-en="Quick Links" data-ar="روابط سريعة">Quick Links</h3>
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#home" class="tr" data-en="Home" data-ar="الرئيسية">Home</a></li>
+                    <li><a href="#services" class="tr" data-en="Services" data-ar="خدماتنا">Services</a></li>
+                    <li><a href="#portfolio" class="tr" data-en="Portfolio" data-ar="أعمالنا">Portfolio</a></li>
+                    <li><a href="#contact" class="tr" data-en="Contact" data-ar="اتصل بنا">Contact</a></li>
                 </ul>
             </div>
             <div class="footer-legal">
-                <h3>Legal</h3>
+                <h3 class="tr" data-en="Legal" data-ar="قانوني">Legal</h3>
                 <ul>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#" class="tr" data-en="Privacy Policy" data-ar="سياسة الخصوصية">Privacy Policy</a></li>
+                    <li><a href="#" class="tr" data-en="Terms of Service" data-ar="شروط الخدمة">Terms of Service</a></li>
                 </ul>
             </div>
             <div class="footer-contact">
-                <h3>Get in Touch</h3>
+                <h3 class="tr" data-en="Get in Touch" data-ar="تواصل معنا">Get in Touch</h3>
                 <p>arabianpixels.studio@gmail.com</p>
                 <p><i class="fas fa-phone"></i> +974 52072921</p>
-                <p><i class="fas fa-map-marker-alt"></i> Dubai, UAE</p>
-                <p><i class="fas fa-map-marker-alt"></i> Doha, Qatar</p>
+                <p class="tr" data-en="<i class='fas fa-map-marker-alt'></i> Dubai, UAE" data-ar="<i class='fas fa-map-marker-alt'></i> دبي، الإمارات العربية المتحدة"><i class="fas fa-map-marker-alt"></i> Dubai, UAE</p>
+                <p class="tr" data-en="<i class='fas fa-map-marker-alt'></i> Doha, Qatar" data-ar="<i class='fas fa-map-marker-alt'></i> الدوحة، قطر"><i class="fas fa-map-marker-alt"></i> Doha, Qatar</p>
                 <div class="social-links" style="margin-top: 1rem;">
-                    <a href="https://instagram.com/arabianpixels" class="ig-btn" target="_blank" style="padding: 0.5rem 1.5rem; font-size: 0.9rem;"><i class="fab fa-instagram"></i> Instagram</a>
+                    <a href="https://instagram.com/arabianpixels" class="ig-btn tr" data-en="<i class='fab fa-instagram'></i> Instagram" data-ar="<i class='fab fa-instagram'></i> انستغرام" target="_blank" style="padding: 0.5rem 1.5rem; font-size: 0.9rem;"><i class="fab fa-instagram"></i> Instagram</a>
                 </div>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Arabian Pixels. All rights reserved.</p>
+            <p class="tr" data-en="&copy; 2026 Arabian Pixels. All rights reserved." data-ar="&copy; 2026 أريبيان بيكسلز. جميع الحقوق محفوظة.">&copy; 2026 Arabian Pixels. All rights reserved.</p>
         </div>
     </footer>
 
